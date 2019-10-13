@@ -1,0 +1,2 @@
+rviz_pkg
+-DCATKIN_DEVEL_PREFIX=/home/hlt/Desktop/task/3rviz/devel -DCMAKE_INSTALL_PREFIX=/home/hlt/Desktop/task/3rviz/install -G Unix Makefiles

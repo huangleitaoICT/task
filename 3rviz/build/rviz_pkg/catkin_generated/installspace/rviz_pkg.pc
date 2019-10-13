@@ -1,0 +1,8 @@
+prefix=/home/hlt/3rviz/install
+
+Name: rviz_pkg
+Description: Description of rviz_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/hlt/3rviz/install/lib 
+Requires: 

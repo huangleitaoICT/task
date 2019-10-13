@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hlt/Desktop/task/7Serial/main.cpp
+stdio.h
+-
+fcntl.h
+-
+termios.h
+-
+unistd.h
+-
+errno.h
+-
+

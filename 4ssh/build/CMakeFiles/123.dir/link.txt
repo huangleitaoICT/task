@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/123.dir/main.cpp.o  -o 123 

@@ -196,14 +196,14 @@ with tf.Session() as sess:
         print ("step %d, training accuracy %g " % (i,train_accuracy))
       summary, result = sess.run([train_summary_merge,train_step],feed_dict={x: batch[0], y_: batch[1], keep_prob: 0.5})
      # train_writer.add_summary(summary, i)
-    saver.save(sess, 'train', global_step=4)
+    saver.save(sess, 'train')
     print ("test accuracy %g"%accuracy.eval(feed_dict={
           x: mnist.test.images, y_: mnist.test.labels, keep_prob: 1.0}))
 
   else:
         img = np.array(Image.open('/home/hlt/Desktop/task/6mnist/mnist/number/6-h.jpg'))
         img = np.reshape(img, [1, 784])
-        saver.restore(sess, '/home/hlt/Desktop/task/6mnist/train-4')
+        saver.restore(sess, '/home/hlt/Desktop/task/6mnist/train')
         print('accuracy is ', accuracy.eval(feed_dict={
             x: mnist.test.images[0:1000], y_: mnist.test.labels[0:1000], keep_prob: 1.0}))
         print(sess.run(y_conv, feed_dict={

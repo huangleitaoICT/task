@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/hlt/Desktop/task/1opencv/build",
+  "command": "/usr/bin/c++   -I/home/hlt/Desktop/task/1opencv/_INCLUDE_DIRS -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/hhh.dir/main.cpp.o -c /home/hlt/Desktop/task/1opencv/main.cpp",
+  "file": "/home/hlt/Desktop/task/1opencv/main.cpp"
+}
+]

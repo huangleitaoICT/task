@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/hlt/Desktop/armor/build",
+  "command": "/usr/bin/c++   -I/home/hlt/Desktop/armor/_INCLUDE_DIRS -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/111.dir/armor.cpp.o -c /home/hlt/Desktop/armor/armor.cpp",
+  "file": "/home/hlt/Desktop/armor/armor.cpp"
+}
+]

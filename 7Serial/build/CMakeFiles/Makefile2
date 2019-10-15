@@ -60,6 +60,43 @@ CMAKE_SOURCE_DIR = /home/hlt/Desktop/task/7Serial
 CMAKE_BINARY_DIR = /home/hlt/Desktop/task/7Serial/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/hhh.dir
+
+# All Build rule for target.
+CMakeFiles/hhh.dir/all:
+	$(MAKE) -f CMakeFiles/hhh.dir/build.make CMakeFiles/hhh.dir/depend
+	$(MAKE) -f CMakeFiles/hhh.dir/build.make CMakeFiles/hhh.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hlt/Desktop/task/7Serial/build/CMakeFiles --progress-num=1,2 "Built target hhh"
+.PHONY : CMakeFiles/hhh.dir/all
+
+# Include target in all.
+all: CMakeFiles/hhh.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/hhh.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hlt/Desktop/task/7Serial/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/hhh.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hlt/Desktop/task/7Serial/build/CMakeFiles 0
+.PHONY : CMakeFiles/hhh.dir/rule
+
+# Convenience name for target.
+hhh: CMakeFiles/hhh.dir/rule
+
+.PHONY : hhh
+
+# clean rule for target.
+CMakeFiles/hhh.dir/clean:
+	$(MAKE) -f CMakeFiles/hhh.dir/build.make CMakeFiles/hhh.dir/clean
+.PHONY : CMakeFiles/hhh.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/hhh.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/ContinuousSubmit.dir
 
 # All Build rule for target.
@@ -472,43 +509,6 @@ CMakeFiles/Continuous.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/Continuous.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/chuankou.dir
-
-# All Build rule for target.
-CMakeFiles/chuankou.dir/all:
-	$(MAKE) -f CMakeFiles/chuankou.dir/build.make CMakeFiles/chuankou.dir/depend
-	$(MAKE) -f CMakeFiles/chuankou.dir/build.make CMakeFiles/chuankou.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hlt/Desktop/task/7Serial/build/CMakeFiles --progress-num=1,2 "Built target chuankou"
-.PHONY : CMakeFiles/chuankou.dir/all
-
-# Include target in all.
-all: CMakeFiles/chuankou.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/chuankou.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hlt/Desktop/task/7Serial/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/chuankou.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hlt/Desktop/task/7Serial/build/CMakeFiles 0
-.PHONY : CMakeFiles/chuankou.dir/rule
-
-# Convenience name for target.
-chuankou: CMakeFiles/chuankou.dir/rule
-
-.PHONY : chuankou
-
-# clean rule for target.
-CMakeFiles/chuankou.dir/clean:
-	$(MAKE) -f CMakeFiles/chuankou.dir/build.make CMakeFiles/chuankou.dir/clean
-.PHONY : CMakeFiles/chuankou.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/chuankou.dir/clean
 
 .PHONY : clean
 

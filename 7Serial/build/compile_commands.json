@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/hlt/Desktop/task/7Serial/build",
-  "command": "/usr/bin/c++    -g   -o CMakeFiles/chuankou.dir/main.cpp.o -c /home/hlt/Desktop/task/7Serial/main.cpp",
+  "command": "/usr/bin/c++    -g   -o CMakeFiles/hhh.dir/main.cpp.o -c /home/hlt/Desktop/task/7Serial/main.cpp",
   "file": "/home/hlt/Desktop/task/7Serial/main.cpp"
 }
 ]

@@ -1,6 +1,7 @@
 /home/hlt/Desktop/task/7Serial/build/CMakeFiles/rebuild_cache.dir
 /home/hlt/Desktop/task/7Serial/build/CMakeFiles/test.dir
 /home/hlt/Desktop/task/7Serial/build/CMakeFiles/package.dir
+/home/hlt/Desktop/task/7Serial/build/CMakeFiles/hhh.dir
 /home/hlt/Desktop/task/7Serial/build/CMakeFiles/ContinuousSubmit.dir
 /home/hlt/Desktop/task/7Serial/build/CMakeFiles/ContinuousMemCheck.dir
 /home/hlt/Desktop/task/7Serial/build/CMakeFiles/ContinuousConfigure.dir
@@ -14,7 +15,6 @@
 /home/hlt/Desktop/task/7Serial/build/CMakeFiles/ExperimentalUpdate.dir
 /home/hlt/Desktop/task/7Serial/build/CMakeFiles/ContinuousBuild.dir
 /home/hlt/Desktop/task/7Serial/build/CMakeFiles/Continuous.dir
-/home/hlt/Desktop/task/7Serial/build/CMakeFiles/chuankou.dir
 /home/hlt/Desktop/task/7Serial/build/CMakeFiles/Experimental.dir
 /home/hlt/Desktop/task/7Serial/build/CMakeFiles/package_source.dir
 /home/hlt/Desktop/task/7Serial/build/CMakeFiles/ExperimentalConfigure.dir

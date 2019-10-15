@@ -201,7 +201,7 @@ with tf.Session() as sess:
           x: mnist.test.images, y_: mnist.test.labels, keep_prob: 1.0}))
 
   else:
-        img = np.array(Image.open('/home/hlt/Desktop/task/6mnist/mnist/number/5.jpg'))
+        img = np.array(Image.open('/home/hlt/Desktop/task/6mnist/mnist/number/9.jpg'))
         img = np.reshape(img, [1, 784])
         saver.restore(sess, '/home/hlt/Desktop/task/6mnist/train')
         print('accuracy is ', accuracy.eval(feed_dict={

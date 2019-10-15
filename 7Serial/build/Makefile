@@ -144,6 +144,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named hhh
+
+# Build rule for target.
+hhh: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hhh
+.PHONY : hhh
+
+# fast build rule for target.
+hhh/fast:
+	$(MAKE) -f CMakeFiles/hhh.dir/build.make CMakeFiles/hhh.dir/build
+.PHONY : hhh/fast
+
+#=============================================================================
 # Target rules for targets named ContinuousSubmit
 
 # Build rule for target.
@@ -311,19 +324,6 @@ Continuous: cmake_check_build_system
 Continuous/fast:
 	$(MAKE) -f CMakeFiles/Continuous.dir/build.make CMakeFiles/Continuous.dir/build
 .PHONY : Continuous/fast
-
-#=============================================================================
-# Target rules for targets named chuankou
-
-# Build rule for target.
-chuankou: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 chuankou
-.PHONY : chuankou
-
-# fast build rule for target.
-chuankou/fast:
-	$(MAKE) -f CMakeFiles/chuankou.dir/build.make CMakeFiles/chuankou.dir/build
-.PHONY : chuankou/fast
 
 #=============================================================================
 # Target rules for targets named Experimental
@@ -526,7 +526,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/chuankou.dir/build.make CMakeFiles/chuankou.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/hhh.dir/build.make CMakeFiles/hhh.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -535,7 +535,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/chuankou.dir/build.make CMakeFiles/chuankou.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/hhh.dir/build.make CMakeFiles/hhh.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -544,7 +544,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/chuankou.dir/build.make CMakeFiles/chuankou.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/hhh.dir/build.make CMakeFiles/hhh.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -556,6 +556,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... package"
+	@echo "... hhh"
 	@echo "... ContinuousSubmit"
 	@echo "... ContinuousMemCheck"
 	@echo "... ContinuousConfigure"
@@ -569,7 +570,6 @@ help:
 	@echo "... ExperimentalUpdate"
 	@echo "... ContinuousBuild"
 	@echo "... Continuous"
-	@echo "... chuankou"
 	@echo "... Experimental"
 	@echo "... package_source"
 	@echo "... ExperimentalConfigure"

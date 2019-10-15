@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/hlt/Desktop/armor/armor.cpp
+/home/hlt/Desktop/task/12armor/armor.cpp
 iostream
 -
 opencv2/opencv.hpp
-/home/hlt/Desktop/armor/opencv2/opencv.hpp
+/home/hlt/Desktop/task/12armor/opencv2/opencv.hpp
 opencv2/highgui/highgui.hpp
 -
 

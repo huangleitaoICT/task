@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hlt/Desktop/armor
+CMAKE_SOURCE_DIR = /home/hlt/Desktop/task/12armor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hlt/Desktop/armor/build
+CMAKE_BINARY_DIR = /home/hlt/Desktop/task/12armor/build
 
 # Utility rule file for ContinuousUpdate.
 
@@ -71,6 +71,6 @@ CMakeFiles/ContinuousUpdate.dir/clean:
 .PHONY : CMakeFiles/ContinuousUpdate.dir/clean
 
 CMakeFiles/ContinuousUpdate.dir/depend:
-	cd /home/hlt/Desktop/armor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hlt/Desktop/armor /home/hlt/Desktop/armor /home/hlt/Desktop/armor/build /home/hlt/Desktop/armor/build /home/hlt/Desktop/armor/build/CMakeFiles/ContinuousUpdate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hlt/Desktop/task/12armor/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hlt/Desktop/task/12armor /home/hlt/Desktop/task/12armor /home/hlt/Desktop/task/12armor/build /home/hlt/Desktop/task/12armor/build /home/hlt/Desktop/task/12armor/build/CMakeFiles/ContinuousUpdate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ContinuousUpdate.dir/depend
 

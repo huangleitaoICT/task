@@ -1,4 +1,4 @@
-# Install script for directory: /home/hlt/Desktop/armor
+# Install script for directory: /home/hlt/Desktop/task/12armor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/hlt/Desktop/armor/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hlt/Desktop/task/12armor/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

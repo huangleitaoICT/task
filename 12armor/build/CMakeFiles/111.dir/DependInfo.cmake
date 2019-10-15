@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/hlt/Desktop/armor/armor.cpp" "/home/hlt/Desktop/armor/build/CMakeFiles/111.dir/armor.cpp.o"
+  "/home/hlt/Desktop/task/12armor/armor.cpp" "/home/hlt/Desktop/task/12armor/build/CMakeFiles/111.dir/armor.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

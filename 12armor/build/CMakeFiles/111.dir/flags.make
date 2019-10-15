@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/hlt/Desktop/armor/_INCLUDE_DIRS -isystem /usr/local/include/opencv4 
+CXX_INCLUDES = -I/home/hlt/Desktop/task/12armor/_INCLUDE_DIRS -isystem /usr/local/include/opencv4 
 

@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/hlt/Desktop/armor
-BuildDirectory: /home/hlt/Desktop/armor/build
+SourceDirectory: /home/hlt/Desktop/task/12armor
+BuildDirectory: /home/hlt/Desktop/task/12armor/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -36,7 +36,7 @@ ScpCommand: /usr/bin/scp
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/hlt/Desktop/armor"
+ConfigureCommand: "/usr/bin/cmake" "/home/hlt/Desktop/task/12armor"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

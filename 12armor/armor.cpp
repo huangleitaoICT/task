@@ -8,7 +8,7 @@ using namespace std;
 
 Mat src;
 Mat img1;
-vector<Mat> imgChannels;	//˺��ͨ��֮�����������ͨ��
+vector<Mat> imgChannels;	//撕裂通道之后存入这三个通道
 Mat img2;
 Mat binary;
 Mat close;
@@ -16,8 +16,8 @@ Mat close;
 
 Mat drawing;
 
-vector<vector<Point>> contours;	//���� ����		//contours������ɶ�ά�����������������潫����洢�ҵ��ı߽�ģ�x,y������
-vector<Vec4i> hierarchy;	//�ȼ��ƶ�	//vector<Vec4i>hierarchy�Ƕ���Ĳ㼶��������ұ߽�findcontours��ʱ����Զ�����
+vector<vector<Point>> contours;	//外形 轮廓		//contours被定义成二维浮点型向量，这里面将来会存储找到的边界的（x,y）坐标
+vector<Vec4i> hierarchy;	//等级制度	//vector<Vec4i>hierarchy是定义的层级。这个在找边界findcontours的时候会自动生成
 
 
 vector<Rect> Rects;
@@ -29,19 +29,19 @@ void ReduceColor(Mat src, Mat dst,double bright)
 	int val;
 	for (int i = 0; i < src.rows; i++)
 	{
-		Vec3b* p1 = src.ptr<Vec3b>(i);//�е�ָ��
+		Vec3b* p1 = src.ptr<Vec3b>(i);//行的指针
 		Vec3b* p2 = dst.ptr<Vec3b>(i);
 		for (int j = 0; j < src.cols; j++)
 		{
 			for (int k = 0; k < 3; k++)
 			{
-				//ÿ�����ص�ÿ��ͨ����ֵ���������Ա任
+				//每个像素的每个通道的值都进行线性变换
 				val = (int)(p1[j][k] + bright);
 				if (val < 0)
 					val = 0;
 				if (val > 255)
 					val = 255;
-				p2[j][k] = val;//��i�еĵ�j�е�kͨ��
+				p2[j][k] = val;//第i行的第j列第k通道
 			}
 		}
 	}
@@ -49,7 +49,7 @@ void ReduceColor(Mat src, Mat dst,double bright)
 
 
 int main() {
-	VideoCapture cap("/home/hlt/Desktop/armor/armor.mp4");
+	VideoCapture cap("C:\\Users\\诺言\\Desktop\\armor.mp4");
 	if (cap.isOpened()) {
 		cout << "isopened" << endl;
 	}
@@ -64,25 +64,25 @@ int main() {
 	while (1) {
 		cap.read(src);
 
-		img1=src.clone();	//û���ȿ�¡ֱ�ӱ���ÿ��Ԫ�� �˷��˴��ʱ��
+		img1=src.clone();	//没有先克隆直接遍历每个元素 浪费了大把时间
 		//imshow("src", src);
 		
 		ReduceColor(src, img1, -100);
 		//imshow("img1", img1);
 
-		split(img1, imgChannels);	//˺��ͨ��
+		split(img1, imgChannels);	//撕裂通道
 		img2 = imgChannels.at(1);
 		//imshow("img2", img2);
 
-		threshold(img2, binary, 25, 255, THRESH_BINARY);//��ֵ��
+		threshold(img2, binary, 25, 255, THRESH_BINARY);//二值化
 		//imshow("binary", binary);
 
-		dilate(binary, close, Mat(), Point(-1, -1), 3);   //ͼ������
-		erode(close, close, Mat(), Point(-1, -1), 1);  //ͼ��ʴ���������ڸ�ʴ���ڱ�����
+		dilate(binary, close, Mat(), Point(-1, -1), 3);   //图像膨胀
+		erode(close, close, Mat(), Point(-1, -1), 1);  //图像腐蚀，先膨胀在腐蚀属于闭运算
 		//imshow("close", close);
 
 
-		findContours(close, contours, RETR_CCOMP, CHAIN_APPROX_SIMPLE); //�ڶ�ֵͼ����Ѱ������
+		findContours(close, contours, RETR_CCOMP, CHAIN_APPROX_SIMPLE); //在二值图像中寻找轮廓
 		vector<vector<Point>>contours_poly(contours.size());
 		vector<Rect>rect_ploy(contours.size());
 
@@ -91,7 +91,7 @@ int main() {
 			rect_ploy[i] = boundingRect(contours_poly[i]);
 		}
 
-		src.copyTo(drawing);//��¡
+		src.copyTo(drawing);//克隆
 		for (int i = 0; i < contours.size(); i++) {
 
 			if (contourArea(contours[i]) > 300) {
@@ -150,4 +150,3 @@ vector<Rect> findRight(vector<Rect>  rects) {
 
 	return rightRect;
 }
-

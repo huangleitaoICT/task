@@ -49,7 +49,7 @@ void ReduceColor(Mat src, Mat dst,double bright)
 
 
 int main() {
-	VideoCapture cap("C:\\Users\\诺言\\Desktop\\armor.mp4");
+	VideoCapture cap("/home/hlt/Desktop/task/12armor/armor.mp4");
 	if (cap.isOpened()) {
 		cout << "isopened" << endl;
 	}

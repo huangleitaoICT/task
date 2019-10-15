@@ -16,7 +16,7 @@ vector<Vec4i> hierarchy;	//等级制度	//vector<Vec4i>hierarchy是定义的层�
 
 
 int main() {
-	VideoCapture cap("C:\\Users\\诺言\\Desktop\\water.avi");
+	VideoCapture cap("/home/hlt/Desktop/task/2ros/water.avi");
 	if (cap.isOpened()) {
 		cout << "isopened" << endl;
 	}

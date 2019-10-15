@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/hlt/Desktop/task/2ros/build",
+  "command": "/usr/bin/c++   -I/home/hlt/Desktop/task/2ros/_INCLUDE_DIRS -isystem /usr/local/include/opencv4  -g   -o CMakeFiles/hhh.dir/main.cpp.o -c /home/hlt/Desktop/task/2ros/main.cpp",
+  "file": "/home/hlt/Desktop/task/2ros/main.cpp"
+}
+]
